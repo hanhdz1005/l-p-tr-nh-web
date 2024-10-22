@@ -1,0 +1,129 @@
+body{
+    background: #f0f2f5;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100vh;
+    
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    width: 350px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0 ,0 , 0.5);
+    
+}
+
+.facebook{
+    text-align: center;
+    color: #1877F2;
+    font-size: large;
+    margin-bottom: -20px;
+}
+
+.header{
+    border-bottom: 2px solid #e8eaeb;
+}
+
+.header h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header p{
+    font-size: 16px;
+    text-align: center;
+    color: #657181;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-fields{
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.name-fields input{
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+input[type="tel"],
+input[type="password"],
+.custom-gender input {
+    width: 88%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.custom-gender select {
+    padding: 10px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+.gender-option{
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.birth-date select{
+    padding: 10px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 30.5%;
+}
+
+button {
+    padding: 12px;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 50%; 
+    cursor: pointer;
+    margin: 10px auto 0 auto; 
+    display: block; 
+}
+
+button:hover {
+    background-color: #36a420;
+}
+
+p{
+    text-align: center;
+}
+
+a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

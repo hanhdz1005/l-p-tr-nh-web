@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-div">
+            <a style="text-decoration: none; color: black" href="http://www.humg.edu.vn. ">Trang chủ</a> > 
+            <a style="text-decoration: none; color: black" href="http://www.humg.edu.vn. ">Đồ dùng nhà bếp</a> > 
+            <a style="text-decoration: none; color: black" href="http://www.humg.edu.vn. ">Các loại máy làm bánh</a> > 
+            <a style="text-decoration: none; color: black" href="http://www.humg.edu.vn. ">Máy nướng bánh</a>
+        </div>
+        <div class="mid-div">
+            <div class="product-img">
+                <img src="https://phanphoidienmay.net/image/cache/catalog/may-nuong-banh-mi/Electrolux/ETS1303W/ETS1303W-650x650.jpg" >
+            </div>
+            <div class="product-details">
+                <h2>(Giá độc quyền) Máy nướng bánh mì Electrolux ETS1303W - Trắng</h2>
+                <div class="price">
+                    <span class="old-price">680.000₫</span>
+                    <span class="new-price">385.000₫</span>
+                    <span class="discount">(-39%)</span>
+                </div>
+                <div class="ship">
+                    <div class="shipping">
+                        <b>Vận chuyển</b>
+                    </div>
+
+                    <div class="shipping-info">
+                        <p>Hỗ trợ phí ship 50.000₫</p>
+                        <p>đơn hàng từ 5.000.000₫</p>
+                        <div style="display: flex; font-size: 14px;">
+                            <a style="margin-right: 5px; text-decoration: none; color: black;" href="http://www.humg.edu.vn. ">Chọn địa chỉ giao hàng</a>
+                            <a>để dự báo thời gian giao hàng, phí đóng gói, vận chuyển chính xác nhất</a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="color">
+                    <a style="font-weight: bold; margin-right: 29px;">Màu sắc</a>
+                    <a>Trắng</a> <br>
+                    <img src="https://phanphoidienmay.net/image/cache/catalog/may-nuong-banh-mi/Electrolux/ETS1303W/ETS1303W-650x650.jpg">
+                </div>
+
+                <div class="quantity-container">
+                    <button class="quantity-btn minus" onclick="decrease()">-</button>
+                    <input type="text" id="quantity" value="1">
+                    <button class="quantity-btn plus" onclick="increase()">+</button>
+                </div>
+                <script>
+                    function increase() {
+                        let quantity = document.getElementById("quantity").value;
+                        quantity = parseInt(quantity) + 1;
+                        document.getElementById("quantity").value = quantity;
+                    }
+    
+                    function decrease() {
+                        let quantity = document.getElementById("quantity").value;
+                        if (quantity > 1) {
+                            quantity = parseInt(quantity) - 1;
+                            document.getElementById("quantity").value = quantity;
+                        }
+                    }
+                </script>
+                <div class="action-buttons">
+                    <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    <button class="buy-now">Mua ngay</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="bot-div">
+            <h2>THÔNG TIN CHUNG</h2>
+            <table class="info-table">
+                <tr>
+                    <td>SKU:</td>
+                    <td>1610779599001 </td>
+                </tr>
+                <tr>
+                    <td>Thương hiệu:</td>
+                    <td>Electrolux</td>
+                </tr>
+                <tr>
+                    <td><label for="country">Xuất xứ:</label></td>
+                    <td>
+                        <select class="country">
+                            <option value="china">Trung Quốc</option>
+                            <option value="vietnam">Việt Nam</option>
+                            <option value="thailand">Thái Lan</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

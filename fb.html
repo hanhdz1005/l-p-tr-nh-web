@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="fb.css">
+        <title>sign up</title>
+    </head>
+    <body>  
+            <div class="container">
+                <div class="facebook"><h1>Facebook</h1></div> 
+                <div class="header">
+                    <h2>Tạo tài khoản mới</h2>
+                    <p>Nhanh chóng và dễ dàng</p>
+                </div>
+
+                <form action="#" method="Post">
+                    <div class="name-fields">
+                        <input type="text" id="firstname" placeholder="Họ" name="firstname" required>
+                        <input type="text" id="lastname" placeholder="Tên" name="lastname" required>
+                    </div>
+
+                    <input type="tel" placeholder="Số điện thoại" name="sdt" required>
+                    <input type="password" placeholder="Mật khẩu" name="password" required>
+
+                    <div class="birth-date">
+                        <label for="birthdate">Ngày sinh</label><br>
+                        <select name="day" id="day">
+                            <script>
+                                const daySelect = document.getElementById('day');
+                                for (let i = 1; i <= 31; i++) {
+                                    const option = document.createElement('option');
+                                    option.value = i;
+                                    option.text = i;
+                                    daySelect.appendChild(option);
+                                }
+                            </script>
+                        </select>
+                        <select name="month" id="month">
+                            <script>
+                                const monthSelect = document.getElementById('month');
+                                for (let i = 1; i <= 12; i++) {
+                                    const option = document.createElement('option');
+                                    option.value = i;
+                                    option.text = i;
+                                    monthSelect.appendChild(option);
+                                }
+                            </script>
+                        </select>
+                        <select name="year" id="year">
+                            <script>
+                                const yearSelect = document.getElementById('year');
+                                for (let i = 2000; i <= 2024; i++) {
+                                    const option = document.createElement('option');
+                                    option.value = i;
+                                    option.text = i;
+                                    yearSelect.appendChild(option);
+                                }
+                            </script>
+                        </select>
+                    </div>
+
+                    
+                    <div class="gender-options">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Nữ</label>
+
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Nam</label>
+
+                        <input type="radio" id="custom" name="gender" value="custom">
+                        <label for="custom">Giới tính khác</label>
+                    </div>
+                    <div class="custom-gender">
+                        <select name="pronoun">
+                            <option value="Anh ấy">Anh ấy: "Chúc anh ấy sinh nhật vui vẻ!"</option>
+                            <option value="Cô ấy">Cô ấy: "Chúc cô ấy sinh nhật vui vẻ!"</option>
+                            <option value="Họ">Họ: "Chúc họ sinh nhật vui vẻ!"</option>
+                        </select>
+                        <input type="text" placeholder="Giới tính (không bắt buộc)" id="other-gender">
+                    </div>
+                    <div>
+                        <button type="submit" class="sign-up">Sign up</button>
+                    </div>
+                            <script>
+                            document.getElementById('sign-up-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form submission to the server
+
+            // Check if all fields are filled and valid (basic check)
+            const firstname = document.getElementById('firstname').value;
+            const lastname = document.getElementById('lastname').value;
+            const password = document.querySelector('input[name="password"]').value;
+            const gender = document.querySelector('input[name="gender"]:checked');
+            const day = document.getElementById('day').value;
+            const month = document.getElementById('month').value;
+            const year = document.getElementById('year').value;
+
+            if (firstname && lastname && phone && password && gender && day && month && year) {
+                // Show success alert with all the required information
+                alert(`Xin chào ${firstname} ${lastname}, sinh ngày ${day}/${month}/${year}, giới tính ${gender.value}. Bạn đã đăng ký thành công!`);
+            } else {
+                // Show error message if some fields are missing
+                alert('Vui lòng điền đầy đủ thông tin!');
+            }
+        });
+                            </script>
+                         
+
+                    
+                </form>
+                <p>Bạn đã có tài khoản? <a href='#'>Đăng nhập</a></p>
+                
+            </div>
+    </body>
+</html>

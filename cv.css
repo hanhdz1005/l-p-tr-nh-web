@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+    
+}
+
+.container {
+    display: flex;
+    height: 1500px;
+    max-width: 1000px;
+    margin-left: 20%;
+    margin-right: 30%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.left-column {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+}
+
+.right-column {
+    padding: 20px;
+    width: 70%;
+}
+
+.profile-img img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.personal-info {
+    text-align: left;
+}
+.personal-info img {
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    height: 15px;
+}
+
+.personal-info h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.personal-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.personal-info ul li {
+    margin-bottom: 10px;
+}
+
+.personal-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.objective,
+.skills,
+.hobbies {
+    margin-top: 20px;
+}
+
+.objective{
+    text-align: left;
+}
+
+.skills{
+    margin-bottom: 20px;
+}
+
+.skills p{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.progress-bar{
+    width: 100%;
+    background-color: #34495e;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+
+}
+
+.CSharp {
+    width: 50%;
+}
+
+.html {
+    width: 55%;
+}
+
+.English {
+    width: 70%;
+}
+
+.section img{
+    height: 25px;
+    background-color: #D3D3D3;
+    border-radius: 15px;
+
+}
+h3 {
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.skills ul,
+.moreInfo ul {
+    list-style: none;
+}
+
+.skills ul li,
+.moreInfo ul li {
+    background-color: #34495e;
+    color: white;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.right-column .section {
+    margin-bottom: 20px;
+}
+
+.right-column .section p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+

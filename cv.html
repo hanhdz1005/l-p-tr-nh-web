@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV xịn xò con bò</title>
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container" >
+        <div class="left-column">
+            <div class="profile-img">
+                <img src="/images/avt.jpg" alt="Profile Picture">
+            </div>
+            <div class="personal-info">
+                <h2 >Nguyễn Minh Hạnh</h2>
+                <ul>
+                    
+                    <li>
+                        <img src="/images/calendar icon.png" >
+                        10/05/2004
+                    </li>
+                    <li>
+                        <img src="/images/8664831_user_icon.png" >
+                        Nam
+                    </li>
+                    <li>
+                        <img src="/images/8666632_phone_icon.png" >
+                        0984332273
+                    </li>
+                    <li>
+                        <img src="/images/134146_mail_email_icon.png" >
+                        nguyenminhhanh1005@gmail.com
+                    </li>
+                    <li>
+                        <img src="/images/352521_location_on_icon.png" >
+                        54 Lê Quang Đạo, Hà Nội
+                    </li>
+                    <li>
+                        <img src="/images/104498_facebook_icon.png" >
+                        <a href="https://www.facebook.com/profile.php?id=61555969651954&mibextid=ZbWKwL">http://fb.com/nguyenminhhanh</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="objective">
+                <h3>Mục tiêu nghề nghiệp</h3>
+                <p>Mong muốn trở thành một PM lead team và tham gia điều phối các sản phẩm quốc tế tại công ty. Ngoài ra tôi muốn không ngừng học hỏi các kỹ năng lập trình mới.</p>
+            </div>
+            <div class="skills">
+                <h3>Kỹ năng</h3>
+                <p>C Sharp</p>
+                <div class="progress-bar">
+                    <div class="progress CSharp"></div>
+                </div>
+                <p>html</p>
+                <div class="progress-bar">
+                    <div class="progress html"></div>
+                </div>
+                <p>Tiếng Anh</p>
+                <div class="progress-bar">
+                    <div class="progress English"></div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="right-column">
+            <div class="section">
+                <h3>
+                    <img src="/images/3586376_education_graduate_graduation cap_icon.png" >
+                    Học vấn
+                </h3>
+                <p>Đại học Mỏ Địa Chất - Chuyên ngành: Công nghệ thông tin (10/2020 - 05/2025)</p>
+            </div>
+            <div class="section">
+                <h3>
+                    <img src="/images/3669401_ic_work_icon.png" >
+                    Khả năng cứng
+                </h3>
+                <p>Ngôn ngữ lập trinh: c#, c++, PHP</p>
+                <p>SQL</p>
+                <p>back-end development, front-end development</p>
+            </div>
+            <div class="section">
+                <h3>
+                    <img src="/images/285648_group_user_icon.png" >
+                    Kĩ năng mềm
+                </h3>
+                <p>Khả năng giao tiếp hiệu quả</p>
+                <p>Khả năng phân tích vấn đề, xác định nguyên nhân và phát triển giải pháp hiệu quả</p>
+                <p>Quản lý thời gian khoa học</p>
+                <p>Kĩ năng giải quyết xung đột và tạo môi trường làm việc tích cực</p>
+            </div>
+            <div class="section">
+                <h3>
+                    <img src="/images/3209368_assurance_award_certificate_document_guarantee_icon.png" >
+                    Chứng chỉ
+                </h3>
+                <p>PHP, MySQL (2023)</p>
+                <p>.Net core(2025)</p>
+                <p>Git, Linux, Redis, MongoDB (2024)</p>
+            </div>
+            <div class="section">
+                <h3>
+                    <img src="/images/290135_pen_pencil_write_icon.png">
+                    Thông tin thêm
+                </h3>
+                <p>Video giới thiệu</p>
+                <video controls width="300px" >
+                    <source src="/video/cút ra ngoài.mp4" type="video/mp4">
+                </video>
+                <p>Thu âm giới thiệu</p>
+                <audio loop controls >
+                    <source src="/audio/idjas0djad.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            
+            <button id="scrollToTopBtn">Lên đầu trang</button>
+
+    <script>
+        const btn = document.getElementById('scrollToTopBtn');
+
+        
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = 'block';
+            } else {
+                btn.style.display = 'none';
+            }
+        };
+
+        
+        btn.onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };
+    </script>
+        </div>
+    </div>
+    
+</body>
+</html>

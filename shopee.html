@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPEEEEEEEEEEEEEEEEEEEEEE</title>
+    <link rel="stylesheet" href="shopee.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/images/shopee.png" alt="Shopee Logo">
+                
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Shopee bao ship 0Đ - Đăng ký ngay!">
+                <button type="submit">
+                    <img src="/images/211817_search_strong_icon.png" alt="Search">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="body-container">
+        <div class="product-images">
+            <div class="main-img">
+                <img src="/images/avt.jpg" alt="Main">
+            </div>
+            <div class="other-img">
+                <img src="/images/avt.jpg" alt="1">
+                <img src="/images/avt.jpg" alt="2">
+                <img src="/images/avt.jpg" alt="3">
+                <img src="/images/avt.jpg" alt="4">
+                <img src="/images/avt.jpg" alt="5">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1>Mầm cây biết đi siêu vip pro </h1>
+            <div class="rating-section">
+                <div class="rating">
+                    
+                    <div class="stars">
+                        <span class="score">4.3</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>☆</span> 
+                        
+                    </div>
+                    <div class="reviews">
+                        <span>99,9k Đánh giá</span>
+                        <a href="#" class="report">Tố cáo</a>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="price-section">
+                <span class="old-price">₫,999,999 - ₫9,999,999</span>
+                <span class="new-price">₫,99,999 - ₫999,999</span>
+                <span class="discount">60% GIẢM</span>
+            </div>
+
+            <div class="return-policy">
+                <div class="check-point">
+                    <p>Chính sách trả hàng</p>
+                    <input type="radio" id="return" value="Trả hàng sau 15 ngày">
+                    <label for="return">Trả hàng sau 15 Ngày</label>
+                </div>
+            </div>
+            <script>
+                let isChecked = false; 
+              
+                const returnRadio = document.getElementById('return');
+              
+                returnRadio.addEventListener('click', function(event) {
+                  if (isChecked) {
+                    returnRadio.checked = false; 
+                    isChecked = false; 
+                  } else {
+                    isChecked = true; 
+                  }
+                });
+            </script>
+
+            <div class="ship">
+                <span>Vận chuyển</span>
+                <span>Miễn phí vận chuyển</span>
+            </div>
+
+            <div class="options">
+                <div class="colors">
+                    <span>Màu Sắc:</span>
+                    <button>Be</button>
+                    <button>Đen</button>
+                    <button>Ghi</button>
+                    <button>Hồng</button>
+                </div>
+                <div class="sizes">
+                    <span>Size:</span>
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
+                </div>
+            </div>
+
+            <div class="quantity-container">
+                <button class="quantity-btn minus" onclick="decrease()">-</button>
+                <input type="text" id="quantity" value="1">
+                <button class="quantity-btn plus" onclick="increase()">+</button>
+            </div>
+            <script>
+                function increase() {
+                    let quantity = document.getElementById("quantity").value;
+                    quantity = parseInt(quantity) + 1;
+                    document.getElementById("quantity").value = quantity;
+                }
+
+                function decrease() {
+                    let quantity = document.getElementById("quantity").value;
+                    if (quantity > 1) {
+                        quantity = parseInt(quantity) - 1;
+                        document.getElementById("quantity").value = quantity;
+                    }
+                }
+            </script>
+            <div class="action-buttons">
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                <button class="buy-now">Mua ngay</button>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
